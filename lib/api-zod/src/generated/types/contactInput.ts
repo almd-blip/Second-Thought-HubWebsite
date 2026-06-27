@@ -5,9 +5,6 @@
  * API specification for Second Thought
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export interface ContactInput {
   /** @minLength 1 */
@@ -18,13 +15,3 @@ export interface ContactInput {
   /** @minLength 1 */
   message: string;
 }
-
-export interface ContactResult {
-  success: boolean;
-  message: string;
-}
-
-export interface ErrorResponse {
-  error: string;
-}
-
